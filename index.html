@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E3: Eventos y manipulación del DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <h1>E3: Eventos y manipulación del DOM</h1>
+</header>
+<main class="main">
+    <div class="form">
+            <h2>Ingresar ID de pizza:</h2>
+        <form class="form_in" id="form" novalidate>
+            <input type="number" id="form_input" min="0" class="input">
+            <button type="submit" class="boton" id="boton">Ingresar</button>
+            </form>
+        <small id="mensaje"></small>
+        
+    </div>    
+    <div class="card" id="card">
+        <div class="nombre" id="nombre">
+            <h2></h2>
+            <small></small>
+        </div>        
+        <img src="" alt="" id="img">       
+        <div class="precio">
+            <span>Precio:</span>
+            <span id="precio" ></span>
+        </div>       
+    </div>
+</main>
+    
+    <script src="index.js"></script>
+</body>
+</html>
