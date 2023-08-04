@@ -95,26 +95,8 @@ const renderPIzza =(i)=>{
   $card.style.display = "flex";
   $nombre[0].textContent = pizzas[i].nombre;
   $nombre[1].textContent = `ID: ${pizzas[i].id}`;
-  $precio.textContent = `$ ${pizzas[i].precio}`; 
-  switch (i){
-    case 0:
-      $img.setAttribute ("src", "./img/muzzarella.png");
-      break;
-      case 1:
-      $img.setAttribute ("src", "./img/cebolla.png");
-      break;
-      case 2:
-      $img.setAttribute ("src", "./img/4quesos.png");
-      break;
-      case 3:
-      $img.setAttribute ("src", "./img/especial.png");
-      break;
-      case 4:
-      $img.setAttribute ("src", "./img/anana.png");
-      break;
-      
-  }
-
+  $precio.textContent = `$ ${pizzas[i].precio}`;
+  $img.setAttribute ("src", pizzas[i].imagen);
 }
 
 
